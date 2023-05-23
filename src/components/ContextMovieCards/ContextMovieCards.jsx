@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { get } from "../../data/httpClient";
+import  get  from "../../data/httpClient";
 import MoviesCard from "../MovieCard/MoviesCard";
 
 import "../ContextMovieCards/contextMovieCards.css";

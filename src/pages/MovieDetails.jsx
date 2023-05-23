@@ -1,5 +1,5 @@
-import { get } from '../data/httpClient'
-import { getMovieImg } from '../utils/getMovieImg'
+import get  from '../data/httpClient'
+import getMovieImg from '../utils/getMovieImg'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
@@ -13,7 +13,9 @@ function MovieDetails() {
         get('movie/' + movieId)
         .then((data) => {
             setMovie(data)
+            console.log(data)
         })
+        .catch(err => console.log(err))
     }, [movieId])
 
     const imageUrl = getMovieImg(movie.poster_path, 500)
@@ -21,7 +23,6 @@ function MovieDetails() {
   return (
     <div>
         <img src={imageUrl} alt={movie.title} />
-
     </div>
   )
 }

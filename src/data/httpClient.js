@@ -1,6 +1,6 @@
 const API = "https://api.themoviedb.org/3";
 
-export function get(path) {
+function get(path) {
   return fetch(API + path, {
     headers: {
       Authorization:
@@ -9,3 +9,5 @@ export function get(path) {
     },
   }).then((result) => result.json());
 }
+
+export default get
