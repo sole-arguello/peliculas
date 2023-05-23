@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import LandingPage from '../pages/LandingPage'
-import MovieDetails from '../pages/MovieDetails'
+import MovieDetails from '../pages/movieDetails/MovieDetails'
 
 function MyRoutes() {
   return (

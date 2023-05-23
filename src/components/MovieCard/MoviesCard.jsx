@@ -7,7 +7,7 @@ function MoviesCard({ itemMovie }) {
   const imageUrl = "https://image.tmdb.org/t/p/w300" + itemMovie.poster_path;
   return (
     <li className="movieCard">
-      <Link to={"/movies/" + itemMovie.id}>
+      <Link className="movieLink" to={"/movies/" + itemMovie.id}>
         <img className="movieImg" src={imageUrl} alt={itemMovie.title} width={230} height={345} />
         <div>{itemMovie.title}</div>
       </Link>

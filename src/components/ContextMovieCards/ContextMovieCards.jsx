@@ -8,10 +8,12 @@ function ContextMovieCards() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    get("/discover/movie").then((data) => {
+    get("/discover/movie")
+    .then((data) => {
       setMovies(data.results);
       console.log(data);
-    });
+    })
+    .catch((err) => console.log(err))
   }, []);
   return (
     <ul className="container">
