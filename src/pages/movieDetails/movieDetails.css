@@ -1,0 +1,30 @@
+.ditailsContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+    width: 80%;
+}
+
+.ditailsImage{
+    border-radius: 15px;
+    object-fit: cover;
+}
+.ditailsText{
+    font-size: 1.5rem;
+}
+.ditailsTitle{
+    margin-top: 0;
+    
+}
+.title{
+    color: white;
+}
+.titleConteiner{
+    font-size: 1.8rem;
+    color: rgb(213 72 72);
+}
