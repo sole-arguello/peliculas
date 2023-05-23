@@ -1,7 +1,8 @@
-import placeholder from '../img/placeholder.png'
+import placeholder from '../../public/placeholder.png'
 
 function getMovieImg(path, width) {
-  return path?`https://image.tmdb.org/t/p/w${width}${path}`:placeholder
+  console.log(path)
+  return path?`https://image.tmdb.org/t/p/w${width}${path}`: placeholder
 }
 
 export default getMovieImg
