@@ -13,6 +13,10 @@
 .movieImg{
     border-radius: 10px;
 }
+.movieLink{
+    text-decoration: none;
+    color: blueviolet;
+}
 
 @media(max-width: 560px) {
     .movieImg{
