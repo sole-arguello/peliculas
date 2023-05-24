@@ -5,6 +5,7 @@ import MoviesCard from "../MovieCard/MoviesCard";
 import "../ContextMovieCards/contextMovieCards.css";
 
 function ContextMovieCards() {
+  
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
